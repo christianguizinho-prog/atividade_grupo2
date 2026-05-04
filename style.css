@@ -1,0 +1,293 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    --bg-main: #0a0a0f;
+    --bg-secondary: #0f0f1a;
+    --text-main: #e0e0ff;
+    --primary: #00f5ff;
+    --secondary: #a855f7;
+}
+
+/* BODY */
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(100, 200, 255, 0.2);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* HEADER RIGHT */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* LOGO */
+.logo-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* NAV */
+.nav-link {
+    color: var(--text-main);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* BOTÕES PADRONIZADOS */
+.btn-primary,
+.btn-secondary {
+    width: 180px;
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* PRIMARY */
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--bg-main);
+    box-shadow: 0 0 25px rgba(0, 245, 255, 0.6);
+}
+
+.btn-primary:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.9);
+}
+
+/* SECONDARY */
+.btn-secondary {
+    background: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--bg-main);
+    transform: scale(1.08) translateY(-3px);
+}
+
+/* BOTÃO GRANDE */
+.btn-large {
+    width: 220px;
+    height: 56px;
+    font-size: 1.05rem;
+}
+
+/* HERO */
+.hero-buttons {
+    display: flex;
+    justify-content: center; /* 🔥 centraliza */
+    align-items: center;
+    gap: 30px; /* espaço entre botões */
+    margin-top: 40px;
+    flex-wrap: wrap; /* evita quebrar em telas menores */
+}
+
+/* BG */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('https://picsum.photos/id/1015/1920/1080') center/cover;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* CONTENT */
+.hero-content {
+    text-align: center;
+    z-index: 2;
+}
+
+/* TITLE */
+.hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.4rem, 5vw, 3.4rem); /* responsivo */
+    line-height: 1.15;                     /* mais compacto */
+    margin-bottom: 16px;                  /* mais equilibrado */
+    letter-spacing: -0.5px;               /* mais moderno */
+}
+
+/* GRADIENT */
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* RELÓGIO PADRONIZADO */
+.relogio {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem; /* 🔽 menor */
+    background: rgba(0, 245, 255, 0.1);
+    border-radius: 30px;
+    border: 1px solid rgba(0, 245, 255, 0.3);
+    color: var(--primary);
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+}
+
+/* FEATURES */
+.features {
+    padding: 120px 0;
+    background: var(--bg-secondary);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* GRID */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(100, 200, 255, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px rgba(0, 245, 255, 0.2);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(100, 200, 255, 0.2);
+}
