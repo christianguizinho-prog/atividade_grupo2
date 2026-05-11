@@ -1,97 +1,224 @@
+<!-- =========================
+ARQUIVO: servicos.html
+========================= -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluções - InnoWave</title>
+    <title>Serviços - InnoWave</title>
 
-    <!-- MESMO CSS DO SITE -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- FONTES -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HEADER (IGUAL AO INDEX) -->
-<header class="header">
-    <div class="container">
+<div class="binary-bg"></div>
 
-        <span class="logo-text">InnoWave</span>
+<header class="topbar">
 
-        <nav class="nav">
-            <a href="index.html" class="nav-link">Início</a>
-            <a href="sobre.html" class="nav-link">Sobre</a>
-            <a href="servicos.html" class="nav-link active">Soluções</a>
-            <a href="contato.html" class="nav-link">Contato</a>
-        </nav>
-
-        <div class="header-right">
-            <div class="relogio"></div>
-
-            <button class="btn-primary" onclick="window.location.href='contato.html'">
-                Fale Conosco
-            </button>
-        </div>
-
+    <div class="logo">
+        <span>INNO</span>WAVE
     </div>
+
+    <nav class="menu">
+        <a href="inicio.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="avaliacoes.html" class="nav-link">Avaliações</a>
+    </nav>
+
+    <div class="relogio"></div>
+
 </header>
 
-<!-- HERO AJUSTADO -->
-<section class="hero" style="min-height: 60vh; margin-top: 80px;">
-    <div class="container hero-content">
+<section class="page-container">
 
-        <h1 class="hero-title">
-            Nossas <span class="gradient-text">Soluções</span>
-        </h1>
+    <h1 class="page-title">
+        Nossos Serviços
+    </h1>
 
-        <p class="hero-subtitle">
-            Tecnologias avançadas para impulsionar empresas com inovação e performance.
-        </p>
+    <div class="cards">
 
-    </div>
-</section>
+        <!-- IA -->
 
-<!-- FEATURES -->
-<section class="features">
-    <div class="container">
+        <div class="feature-card service-card">
 
-        <div class="features-grid">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
+                 alt="Inteligência Artificial">
 
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3>IA & Machine Learning</h3>
-                <p>Chatbots inteligentes, previsão de vendas e automação de processos.</p>
+            <div class="service-content">
+
+                <h3>Inteligência Artificial</h3>
+
+                <p>
+                    Desenvolvimento de soluções inteligentes com IA
+                    para análise de dados, automação e otimização
+                    empresarial.
+                </p>
+
             </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">🏢</div>
-                <h3>ERP Personalizado</h3>
-                <p>Sistema completo de gestão empresarial sob medida.</p>
+        </div>
+
+        <!-- AUTOMAÇÃO -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                 alt="Automação Empresarial">
+
+            <div class="service-content">
+
+                <h3>Automação Empresarial</h3>
+
+                <p>
+                    Integração de sistemas inteligentes para automatizar
+                    tarefas repetitivas e aumentar produtividade.
+                </p>
+
             </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">☁️</div>
-                <h3>Sistemas em Nuvem</h3>
-                <p>Plataformas escaláveis com alta disponibilidade.</p>
+        </div>
+
+        <!-- CYBER -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
+                 alt="Cyber Security">
+
+            <div class="service-content">
+
+                <h3>Cyber Security</h3>
+
+                <p>
+                    Segurança digital avançada com monitoramento de ameaças,
+                    proteção de dados e firewalls inteligentes.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CLOUD -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop"
+                 alt="Cloud Computing">
+
+            <div class="service-content">
+
+                <h3>Cloud Computing</h3>
+
+                <p>
+                    Infraestrutura em nuvem moderna para empresas que
+                    precisam de escalabilidade e velocidade.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- WEB -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+                 alt="Desenvolvimento Web">
+
+            <div class="service-content">
+
+                <h3>Desenvolvimento Web</h3>
+
+                <p>
+                    Desenvolvimento de plataformas web modernas,
+                    rápidas, seguras e responsivas.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- BIG DATA -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                 alt="Big Data">
+
+            <div class="service-content">
+
+                <h3>Big Data & Analytics</h3>
+
+                <p>
+                    Análise avançada de dados empresariais com dashboards
+                    inteligentes e relatórios automáticos.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CHATBOT -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop"
+                 alt="Chatbot IA">
+
+            <div class="service-content">
+
+                <h3>Chatbots Inteligentes</h3>
+
+                <p>
+                    Atendimento automatizado com IA para suporte,
+                    vendas e comunicação empresarial.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- INFRA -->
+
+        <div class="feature-card service-card">
+
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop"
+                 alt="Infraestrutura">
+
+            <div class="service-content">
+
+                <h3>Infraestrutura Tecnológica</h3>
+
+                <p>
+                    Estruturas modernas de servidores, redes e sistemas
+                    corporativos de alta performance.
+                </p>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
-<!-- FOOTER (IGUAL AO INDEX) -->
+<!-- BOTÃO WHATSAPP -->
+
+<a href="https://wa.me/5518999999999"
+   class="whatsapp-btn"
+   target="_blank">
+
+    💬
+
+</a>
+
 <footer class="footer">
-    <div class="container">
-        <p>&copy; 2026 InnoWave Software. Todos os direitos reservados.</p>
-        <div class="relogio"></div>
-    </div>
+    © 2026 InnoWave
 </footer>
 
-<!-- MESMO SCRIPT -->
 <script src="script.js"></script>
-
 </body>
 </html>

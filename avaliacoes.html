@@ -1,0 +1,251 @@
+<!-- =========================
+ARQUIVO: avaliacoes.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Avaliações - InnoWave</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="binary-bg"></div>
+
+<!-- HEADER -->
+
+<header class="topbar">
+
+    <div class="logo">
+
+        <span>INNO</span>WAVE
+
+    </div>
+
+    <nav class="menu">
+
+        <a href="inicio.html"
+           class="nav-link">
+
+           Início
+
+        </a>
+
+        <a href="sobre.html"
+           class="nav-link">
+
+           Sobre
+
+        </a>
+
+        <a href="servicos.html"
+           class="nav-link">
+
+           Serviços
+
+        </a>
+
+        <a href="avaliacoes.html"
+           class="nav-link active">
+
+           Avaliações
+
+        </a>
+
+        <a href="contato.html"
+           class="nav-link">
+
+           Contato
+
+        </a>
+
+    </nav>
+
+    <div class="relogio"></div>
+
+</header>
+
+<!-- CONTEÚDO -->
+
+<section class="page-container">
+
+    <h1 class="page-title">
+
+        Avaliações de Clientes
+
+    </h1>
+
+    <!-- CONTAINER -->
+
+    <div id="avaliacoes"
+         class="review-container">
+
+        <!-- CARD -->
+
+        <div class="review-card">
+
+            <div class="stars">
+
+                ★★★★★
+
+            </div>
+
+            <h3>
+
+                TechSolutions LTDA
+
+            </h3>
+
+            <p>
+
+                “A InnoWave automatizou completamente nossos processos internos.”
+
+            </p>
+
+            <span class="review-user">
+
+                — Diretor Executivo
+
+            </span>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div class="review-card">
+
+            <div class="stars">
+
+                ★★★★★
+
+            </div>
+
+            <h3>
+
+                CyberMax Security
+
+            </h3>
+
+            <p>
+
+                “Sistema extremamente moderno e eficiente.”
+
+            </p>
+
+            <span class="review-user">
+
+                — CEO
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    
+    <div class="section-title margin-top">
+
+        <h2>
+
+
+            Faça Sua Avaliação
+
+        </h2>
+
+    </div>
+
+    <form class="contact-form"
+          onsubmit="return enviarAvaliacao(this)">
+
+        <input type="text"
+               id="nome"
+               placeholder="Seu nome"
+               required>
+
+        <input type="text"
+               id="empresa"
+               placeholder="Empresa"
+               required>
+
+        <select class="rating-select"
+                id="nota"
+                required>
+
+            <option value="">
+                Escolha a nota
+            </option>
+
+            <option value="★★★★★">
+                ★★★★★ - Excelente
+            </option>
+
+            <option value="★★★★☆">
+                ★★★★☆ - Muito Bom
+            </option>
+
+            <option value="★★★☆☆">
+                ★★★☆☆ - Bom
+            </option>
+
+            <option value="★★☆☆☆">
+                ★★☆☆☆ - Regular
+            </option>
+
+            <option value="★☆☆☆☆">
+                ★☆☆☆☆ - Ruim
+            </option>
+
+        </select>
+
+        <textarea id="mensagem"
+                  placeholder="Digite sua avaliação..."
+                  required></textarea>
+
+        <button class="btn neon-btn">
+
+            Enviar Avaliação
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    © 2026 InnoWave
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/5511999999999"
+   class="whatsapp-btn"
+   target="_blank">
+
+   💬
+
+</a>
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

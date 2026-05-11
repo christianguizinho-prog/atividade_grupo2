@@ -1,122 +1,72 @@
+<!-- =========================
+ARQUIVO: contato.html
+========================= -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a InnoWave e leve sua empresa para o próximo nível com tecnologia.">
     <title>Contato - InnoWave</title>
 
-    <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container header-container">
+<div class="binary-bg"></div>
 
-            <div class="logo">
-                <a href="index.html" aria-label="Página inicial InnoWave">
-                    <span class="logo-text">INNOWAVE</span>
-                </a>
-            </div>
+<header class="topbar">
 
-            <nav class="nav" aria-label="Menu principal">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
-                    <li><a href="servicos.html" class="nav-link">Soluções</a></li>
-                    <li><a href="contato.html" class="nav-link active" aria-current="page">Contato</a></li>
-                </ul>
-            </nav>
+    <div class="logo">
+        <span>INNO</span>WAVE
+    </div>
 
-            <div class="header-right">
-                <div id="relogio" class="relogio" aria-live="polite"></div>
-                <a href="contato.html" class="btn-primary">Fale Conosco</a>
-            </div>
+    <nav class="menu">
+        <a href="inicio.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="avaliacoes.html" class="nav-link">Avaliações</a>
+    </nav>
 
-        </div>
-    </header>
+    <div class="relogio"></div>
 
-    <main>
+</header>
 
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container hero-content">
-                <h1 class="hero-title">Vamos conversar?</h1>
-                <p class="hero-subtitle">
-                    Entre em contato e transforme sua empresa com tecnologia de ponta.
-                </p>
-            </div>
-        </section>
+<section class="page-container">
 
-        <!-- FORMULÁRIO -->
-        <section class="features">
-            <div class="container">
+    <h1 class="page-title">Entre em Contato</h1>
 
-                <form id="formContato" class="form-contato" novalidate>
-                    
-                    <div class="form-group">
-                        <label for="nome">Nome completo</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
+    <form class="contact-form"
+          onsubmit="return validarFormulario(this)">
 
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+        <input type="text" placeholder="Seu nome">
 
-                    <div class="form-group">
-                        <label for="telefone">Telefone / WhatsApp</label>
-                        <input type="tel" id="telefone" name="telefone">
-                    </div>
+        <input type="email" placeholder="Seu email">
 
-                    <a 
-                       href="https://wa.me/5511999999999" 
-                       target="_blank" 
-                       class="btn-primary">
-                       Falar no WhatsApp
-                    </a>
+        <textarea placeholder="Digite sua mensagem"></textarea>
 
-                    <button type="submit" class="btn-primary btn-large">
-                        Enviar via WhatsApp
-                    </button>
+        <button class="btn neon-btn">
+            Enviar Mensagem
+        </button>
 
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
-                    </div>
+    </form>
 
-                    <button type="submit" class="btn-primary btn-large">
-                        Enviar Mensagem
-                    </button>
+    <!-- BOTÃO WHATSAPP -->
 
-                    <p id="feedback" class="form-feedback" aria-live="polite"></p>
+<a href="https://wa.me/5511999999999"
+   class="whatsapp-btn"
+   target="_blank">
 
-                </form>
+    <span>💬</span>
 
-            </div>
-        </section>
+</a>
 
-    </main>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 InnoWave Software. Todos os direitos reservados.</p>
-            <div id="relogio-footer" class="relogio" aria-live="polite"></div>
-        </div>
-    </footer>
+<footer class="footer">
+    © 2026 InnoWave
+</footer>
 
-    <!-- JS -->
-    <script src="script.js" defer></script>
-
+<script src="script.js"></script>
 </body>
 </html>
