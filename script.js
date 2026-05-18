@@ -1,8 +1,4 @@
-/* =========================
-ARQUIVO: script.js
-========================= */
-
-/* RELÓGIO FUTURISTA */
+/* RELÓGIO*/
 
 function atualizarRelogio() {
 
@@ -26,7 +22,6 @@ setInterval(atualizarRelogio, 1000);
 atualizarRelogio();
 
 /* MENU ATIVO */
-
 function marcarLinkAtivo() {
 
     const links = document.querySelectorAll('.nav-link');
@@ -46,7 +41,6 @@ function marcarLinkAtivo() {
 }
 
 /* ANIMAÇÃO DOS CARDS */
-
 function animarAoScroll() {
 
     const cards =
@@ -83,7 +77,6 @@ function animarAoScroll() {
 }
 
 /* PARTÍCULAS */
-
 function criarParticulas() {
 
     const hero =
@@ -131,7 +124,6 @@ function criarParticulas() {
 }
 
 /* ANIMAÇÃO PARTÍCULAS */
-
 const style = document.createElement('style');
 
 style.innerHTML = `
@@ -158,13 +150,10 @@ style.innerHTML = `
 
 document.head.appendChild(style);
 
-/* =========================
-AVALIAÇÕES
-========================= */
-
+/*AVALIAÇÕES */
 function enviarAvaliacao(form){
 
-    /* PEGAR VALORES */
+/*PEGAR INFORMAÇÕES*/
 
     const nome =
     document.getElementById('nome');
@@ -178,7 +167,7 @@ function enviarAvaliacao(form){
     const mensagem =
     document.getElementById('mensagem');
 
-    /* VALIDAR CAMPOS */
+    /*VALIDAR CAMPOS*/
 
     if(
         nome.value.trim() === '' ||
@@ -194,22 +183,22 @@ function enviarAvaliacao(form){
         return false;
     }
 
-    /* CONTAINER DAS AVALIAÇÕES */
+    /*CAMPO DAS AVALIAÇÕES*/
 
     const container =
     document.getElementById('avaliacoes');
 
-    /* CRIAR CARD */
+    /*CRIAR CARD*/
 
     const card =
     document.createElement('div');
 
-    /* CLASSE */
+    /*CLASSE*/
 
     card.className =
     'review-card feature-card';
 
-    /* HTML DO CARD */
+    /*HTML DO CARD*/
 
     card.innerHTML = `
 
@@ -239,14 +228,14 @@ function enviarAvaliacao(form){
 
     `;
 
-    /* ANIMAÇÃO INICIAL */
+    /*ANIMAÇÃO INICIAL*/
 
     card.style.opacity = '0';
 
     card.style.transform =
     'translateY(40px)';
 
-    /* ADICIONAR CARD */
+    /*ADICIONAR CARD*/
 
     container.prepend(card);
 
@@ -279,7 +268,7 @@ function enviarAvaliacao(form){
     return false;
 }
 
-/* SMOOTH SCROLL */
+/*SMOOTH SCROLL*/
 
 document.querySelectorAll(
 'a[href^="#"]'
@@ -306,7 +295,7 @@ document.querySelectorAll(
     });
 });
 
-/* INICIALIZAÇÃO */
+/*INICIALIZAÇÃO*/
 
 window.onload = () => {
 

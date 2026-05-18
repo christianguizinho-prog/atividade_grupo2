@@ -1,7 +1,3 @@
-/* =========================
-ARQUIVO: style.css
-========================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 *{
@@ -17,10 +13,7 @@ body{
     overflow-x:hidden;
 }
 
-/* =========================
-FUNDO BINÁRIO FUTURISTA
-========================= */
-
+/*FUNDO BINÁRIO*/
 .binary-bg{
 
     position:fixed;
@@ -41,45 +34,6 @@ FUNDO BINÁRIO FUTURISTA
         #06131f,
         #02040a 70%
     );
-}
-
-/* TEXTO BINÁRIO */
-
-.binary-bg::before{
-
-    content:
-    "010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101";
-
-    position:absolute;
-
-    top:-100%;
-
-    left:0;
-
-    width:200%;
-
-    height:300%;
-
-    color:#00f5ff22;
-
-    font-size:22px;
-
-    line-height:32px;
-
-    letter-spacing:4px;
-
-    white-space:pre-wrap;
-
-    word-break:break-all;
-
-    animation:
-    matrixMove 15s linear infinite;
-
-    transform:
-    rotate(-12deg);
-
-    text-shadow:
-    0 0 8px #00f5ff55;
 }
 
 /* ANIMAÇÃO */
@@ -146,7 +100,7 @@ FUNDO BINÁRIO FUTURISTA
     text-shadow:0 0 10px #00f5ff;
 }
 
-/* RELÓGIO */
+/*RELÓGIO*/
 
 .relogio{
     color:#00f5ff;
@@ -160,7 +114,7 @@ FUNDO BINÁRIO FUTURISTA
     background:#00151a;
 }
 
-/* HERO */
+/*HERO*/
 
 .hero{
     min-height:90vh;
@@ -188,7 +142,7 @@ FUNDO BINÁRIO FUTURISTA
     line-height:1.8;
 }
 
-/* BOTÕES */
+/*BOTÕES*/
 
 .hero-buttons{
     margin-top:40px;
@@ -230,7 +184,7 @@ FUNDO BINÁRIO FUTURISTA
     color:#000;
 }
 
-/* SEÇÕES */
+/*SEÇÕES*/
 
 .section,
 .page-container{
@@ -248,7 +202,7 @@ FUNDO BINÁRIO FUTURISTA
     color:#00f5ff;
 }
 
-/* CARDS */
+/*CARDS*/
 
 .cards{
     display:grid;
@@ -292,7 +246,7 @@ FUNDO BINÁRIO FUTURISTA
     line-height:1.8;
 }
 
-/* FORM */
+/*FORM*/
 
 .contact-form{
     max-width:700px;
@@ -317,7 +271,7 @@ FUNDO BINÁRIO FUTURISTA
     resize:none;
 }
 
-/* FOOTER */
+/*FOOTER*/
 
 .footer{
     text-align:center;
@@ -326,7 +280,7 @@ FUNDO BINÁRIO FUTURISTA
     color:#888;
 }
 
-/* RESPONSIVO */
+/*RESPONSIVO*/
 
 @media(max-width:900px){
 
@@ -345,9 +299,7 @@ FUNDO BINÁRIO FUTURISTA
     }
 }
 
-/* =========================
-AVALIAÇÕES
-========================= */
+/*AVALIAÇÕES*/
 
 .review-container{
 
@@ -360,7 +312,7 @@ AVALIAÇÕES
     margin-top:50px;
 }
 
-/* CARD */
+/*CARD*/
 
 .review-card{
 
@@ -387,7 +339,7 @@ AVALIAÇÕES
     transition:0.5s;
 }
 
-/* LINHA NEON */
+/*LINHA NEON*/
 
 .review-card::before{
 
@@ -407,7 +359,7 @@ AVALIAÇÕES
     0 0 20px #00f5ff;
 }
 
-/* HOVER */
+/*HOVER*/
 
 .review-card:hover{
 
@@ -418,7 +370,7 @@ AVALIAÇÕES
     0 0 35px #00f5ff44;
 }
 
-/* ESTRELAS */
+/*ESTRELAS*/
 
 .stars{
 
@@ -432,7 +384,7 @@ AVALIAÇÕES
     0 0 10px #00f5ff;
 }
 
-/* EMPRESA */
+/*EMPRESA*/
 
 .review-card h3{
 
@@ -443,7 +395,7 @@ AVALIAÇÕES
     margin-bottom:15px;
 }
 
-/* TEXTO */
+/*TEXTO*/
 
 .review-card p{
 
@@ -452,7 +404,7 @@ AVALIAÇÕES
     line-height:1.8;
 }
 
-/* USUÁRIO */
+/*USUÁRIO*/
 
 .review-user{
 
@@ -465,7 +417,7 @@ AVALIAÇÕES
     font-size:14px;
 }
 
-/* SELECT */
+/*SELECT*/
 
 .rating-select{
 
@@ -485,7 +437,7 @@ AVALIAÇÕES
     font-family:'Orbitron', sans-serif;
 }
 
-/* SERVIÇOS COM IMAGEM */
+/*SERVIÇOS COM IMAGEM*/
 .service-card{
     overflow:hidden;
     padding:0;
@@ -519,8 +471,7 @@ AVALIAÇÕES
     margin-bottom:20px;
 }
 
-/* =========================
-BOTÃO WhatsApp========================= */
+/*BOTÃO WhatsApp*/
 .whatsapp-btn{
     position:fixed;
     bottom:30px;
@@ -561,7 +512,7 @@ BOTÃO WhatsApp========================= */
     transition:0.4s;
 }
 
-/* HOVER */
+/*HOVER*/
 
 .whatsapp-btn:hover{
 
@@ -574,7 +525,7 @@ BOTÃO WhatsApp========================= */
     0 0 60px #00ff88;
 }
 
-/* ANIMAÇÕES */
+/*ANIMAÇÕES*/
 
 @keyframes pulseWhats{
 
